@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Pobieram i uruchamiam obraz'
-                sh 'docker run ngnix'
+                sh 'docker run -d ngnix'
             }
         }
         stage('Test') {
@@ -20,4 +20,5 @@ pipeline {
             }
         }
     }
+
 }
