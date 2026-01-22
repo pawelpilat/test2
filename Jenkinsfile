@@ -14,6 +14,7 @@ pipeline {
                 sh 'chmod +x ./witaj.sh'
                 sh './witaj.sh'
                 sh 'ls -l'
+                sh 'cat witaj.txt'
             }
         }
         stage('Deploy') {
@@ -24,6 +25,7 @@ pipeline {
     }
 
 }
+
 
 
 
