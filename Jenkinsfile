@@ -13,6 +13,7 @@ pipeline {
                 echo 'Odpalam testy...'
                 sh 'chmod +x ./witaj.sh'
                 sh './witaj.sh'
+                sh 'ls -l'
             }
         }
         stage('Deploy') {
@@ -23,6 +24,7 @@ pipeline {
     }
 
 }
+
 
 
 
