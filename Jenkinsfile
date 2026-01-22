@@ -11,8 +11,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Odpalam testy...'
-                sh 'chmod +x ./milosc.sh'
-                sh './milosc.sh'
+                sh 'chmod +x ./witaj.sh'
+                sh './witaj.sh'
             }
         }
         stage('Deploy') {
@@ -23,6 +23,7 @@ pipeline {
     }
 
 }
+
 
 
 
